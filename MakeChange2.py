@@ -1,0 +1,29 @@
+Money=int()
+Change=int()
+Money=int(input())
+Change=1000-Money
+Register500=Change//500
+Change=Change%500
+Register100=Change//100
+Change=Change%100
+Register50=Change//50
+Change=Change%50
+Register10=Change//10
+Change=Change%10
+Register5=Change//5
+Change=Change%5
+Register1=Change//1
+Change=Change%1
+
+if Register500 != 0:
+	print("500,", str(Register500), end="")
+if Register100 != 0:
+	print("; 100,", str(Register100), end="")
+if Register50 != 0:
+	print("; 50,", str(Register50), end="")
+if Register10 != 0:
+	print("; 10,", str(Register10), end="")
+if Register5 != 0:
+	print("; 5,", str(Register5), end="")
+if Register1 != 0:
+	print("; 1,", str(Register1))
